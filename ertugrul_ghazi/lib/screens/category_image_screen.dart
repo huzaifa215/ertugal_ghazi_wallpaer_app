@@ -7,21 +7,6 @@ class CategoryImageScreen extends StatelessWidget {
   final String categoryName;
   final List imageList;
 
-  // @override
-  // void initState() {
-  //   if (categoryName == "ErtugrulGhazi") {
-  //     imageList = ErtugrulGhazi;
-  //   } else if (categoryName == "Season1") {
-  //     imageList = Season1;
-  //   } else if (categoryName == "Season2") {
-  //     imageList = Season2;
-  //   } else if (categoryName == "Season3") {
-  //     imageList = Season3;
-  //   } else if (categoryName == "Season4") {
-  //     imageList = Season4;
-  //   }
-  // }
-
   CategoryImageScreen({Key key, this.categoryName, this.imageList})
       : super(key: key);
 

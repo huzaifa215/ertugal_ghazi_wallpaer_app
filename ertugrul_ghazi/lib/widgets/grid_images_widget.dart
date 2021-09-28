@@ -1,13 +1,15 @@
 import 'package:ertugrul_ghazi/data/list_data.dart';
+import 'package:ertugrul_ghazi/screens/complete_image_screen.dart';
 import 'package:flutter/material.dart';
 
 class GridImagesWidget extends StatelessWidget {
   final List listname;
 
   const GridImagesWidget({Key key, this.listname}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    return   Expanded(
+    return Expanded(
       flex: 3,
       child: GridView.builder(
           padding: EdgeInsets.all(5),
@@ -19,26 +21,35 @@ class GridImagesWidget extends StatelessWidget {
           ),
           scrollDirection: Axis.vertical,
           shrinkWrap: true,
-          itemCount:listname.length,
+          itemCount: listname.length,
           itemBuilder: (BuildContext context, int index) {
-            return Column(
-              children: [
-                Container(
-                  padding: EdgeInsets.all(5),
-                  width: 180,
-                  height: 300,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    image: DecorationImage(
-                        image: AssetImage(listname[index]),
-                        fit: BoxFit.fill
+            return GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => CompleteImageScreen(
+                      imageUrl: listname[index],
                     ),
                   ),
-                ),
-              ],
+                );
+              },
+              child: Column(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(5),
+                    width: 180,
+                    height: 300,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      image: DecorationImage(
+                          image: AssetImage(listname[index]), fit: BoxFit.fill),
+                    ),
+                  ),
+                ],
+              ),
             );
-          }
-      ),
+          }),
     );
   }
 }
