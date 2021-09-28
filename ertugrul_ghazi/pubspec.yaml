@@ -1,5 +1,5 @@
 name: ertugrul_ghazi
-description: Ertugrul Ghazi Wallpaper App
+description: ErtugrulGhazi Wallpaper App
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -45,9 +45,13 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-assets:
-  - images/
-
+  assets:
+    - images/ErtugrulGhazi/
+    - images/CategoriesImages/
+    - images/Season1/
+    - images/Season2/
+    - images/Season3/
+    - images/Season4/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

@@ -1,6 +1,6 @@
 # ertugrul_ghazi
 
-Ertugrul Ghazi Wallpaper App
+ErtugrulGhazi Wallpaper App
 
 ## Getting Started
 
