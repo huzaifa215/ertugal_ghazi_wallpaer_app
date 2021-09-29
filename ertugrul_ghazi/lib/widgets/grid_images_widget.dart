@@ -36,14 +36,17 @@ class GridImagesWidget extends StatelessWidget {
               },
               child: Column(
                 children: [
-                  Container(
-                    padding: EdgeInsets.all(5),
-                    width: 180,
-                    height: 300,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      image: DecorationImage(
-                          image: AssetImage(listname[index]), fit: BoxFit.fill),
+                  Hero(
+                    tag: listname[index],
+                    child: Container(
+                      padding: EdgeInsets.all(5),
+                      width: 180,
+                      height: 300,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        image: DecorationImage(
+                            image: AssetImage(listname[index]), fit: BoxFit.fill),
+                      ),
                     ),
                   ),
                 ],

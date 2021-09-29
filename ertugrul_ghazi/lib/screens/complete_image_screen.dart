@@ -6,16 +6,19 @@ class CompleteImageScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-     body:Container(
-        padding: EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),
-          image: DecorationImage(
-              image: AssetImage(imageUrl),
-              fit: BoxFit.fill
+     body:Hero(
+       tag: imageUrl,
+       child: Container(
+          padding: EdgeInsets.all(20),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            image: DecorationImage(
+                image: AssetImage(imageUrl),
+                fit: BoxFit.contain,
+            ),
           ),
         ),
-      ),
+     ),
     );
   }
 }

@@ -34,6 +34,7 @@ List ErtugrulGhazi = [
   "images/ErtugrulGhazi/(7).jpg",
   "images/ErtugrulGhazi/(12).jpg",
   "images/ErtugrulGhazi/(13).jpg",
+  "images/ErtugrulGhazi/(14).jpg"
 ];
 List Season1 = [
   "images/Season1/1.jpg",

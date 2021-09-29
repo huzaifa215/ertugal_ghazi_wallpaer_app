@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 Widget splashScreen() {
   return AnimatedSplashScreen(
     splashIconSize: 300,
+    backgroundColor: Colors.grey.shade900,
     splash: Container(
       decoration: BoxDecoration(
         shape: BoxShape.circle,

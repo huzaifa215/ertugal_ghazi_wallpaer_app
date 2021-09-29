@@ -1,5 +1,6 @@
 import 'package:ertugrul_ghazi/data/list_data.dart';
 import 'package:ertugrul_ghazi/screens/category_image_screen.dart';
+import 'package:ertugrul_ghazi/screens/drawer.dart';
 import 'package:ertugrul_ghazi/widgets/app_bar_widget.dart';
 import 'package:ertugrul_ghazi/widgets/grid_images_widget.dart';
 import 'package:flutter/material.dart';
@@ -9,6 +10,7 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: drawerWidget(),
       appBar: AppBarWidget(title: "Home Screen"),
       body: Column(
         children: [
@@ -67,7 +69,8 @@ class HomeScreen extends StatelessWidget {
                 ),
               );
             },
-          )),
+          ),
+          ),
           GridImagesWidget(
             listname: Season1,
           )

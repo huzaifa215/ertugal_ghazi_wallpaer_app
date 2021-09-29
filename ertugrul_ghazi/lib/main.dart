@@ -1,6 +1,4 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:ertugrul_ghazi/screens/home_screen.dart';
-import 'package:ertugrul_ghazi/widgets/splash_screen.dart';
+import 'package:ertugrul_ghazi/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -15,6 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        brightness: Brightness.dark,
         primarySwatch: Colors.blue,
       ),
       home: splashScreen(),
